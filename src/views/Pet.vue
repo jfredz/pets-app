@@ -4,6 +4,8 @@
       <font-awesome-icon :icon="this.$route.params.species === 'cats' ? 'cat' : 'dog'" />
       {{ pet.name }}
     </h1>
+    <p>{{ pet.age }} years old</p>
+    <p>Breed: {{ pet.breed }}</p>
   </div>
 </template>
 
