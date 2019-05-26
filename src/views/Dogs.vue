@@ -15,13 +15,13 @@
 import { mapState } from 'vuex'
 
 export default {
-	data() {
-		return {}
-	},
-	computed: {
-		...mapState([
-    'dogs'
+  data () {
+    return {}
+  },
+  computed: {
+    ...mapState([
+      'dogs'
     ])
-	}
+  }
 }
 </script>

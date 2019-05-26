@@ -2,9 +2,9 @@
 	<div>
 		<h1>
 			<font-awesome-icon :icon="this.$route.params.species === 'cats' ? 'cat' : 'dog'" />
-			{{ pet.name }}	
+			{{ pet.name }}
 		</h1>
-		
+
 	</div>
 
 </template>
@@ -13,20 +13,20 @@
 import { mapState } from 'vuex'
 
 export default {
-	data() {
-		return {
-			pet: {}
-		}
-	},
+  data () {
+    return {
+      pet: {}
+    }
+  },
   computed: {
     ...mapState([
       'cats',
       'dogs'
     ])
   },
-  mounted() {
-  		const pet = this[this.$route.params.species][this.$route.params.id];
-  		this.pet = pet;
+  mounted () {
+  		const pet = this[this.$route.params.species][this.$route.params.id]
+  		this.pet = pet
   }
 }
 </script>

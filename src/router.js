@@ -5,7 +5,6 @@ import Cats from './views/Cats.vue'
 import Dogs from './views/Dogs.vue'
 import Pet from './views/Pet.vue'
 
-
 Vue.use(Router)
 
 export default new Router({
