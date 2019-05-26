@@ -1,5 +1,5 @@
 <template>
 	<div>
-		Pet
+		{{ $route.params.id }}
 	</div>
 </template>
