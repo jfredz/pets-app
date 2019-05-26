@@ -1,12 +1,10 @@
 <template>
-	<div>
-		<h1>
-			<font-awesome-icon :icon="this.$route.params.species === 'cats' ? 'cat' : 'dog'" />
-			{{ pet.name }}
-		</h1>
-
-	</div>
-
+  <div>
+    <h1>
+      <font-awesome-icon :icon="this.$route.params.species === 'cats' ? 'cat' : 'dog'" />
+      {{ pet.name }}
+    </h1>
+  </div>
 </template>
 
 <script>
@@ -25,8 +23,8 @@ export default {
     ])
   },
   mounted () {
-  		const pet = this[this.$route.params.species][this.$route.params.id]
-  		this.pet = pet
+    const pet = this[this.$route.params.species][this.$route.params.id]
+    this.pet = pet
   }
 }
 </script>
